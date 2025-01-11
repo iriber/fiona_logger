@@ -1,7 +1,4 @@
-
-
 import 'package:fiona_logger/src/log/fiona_logger.dart';
-import 'package:intl/intl.dart';
 
 class LogData{
 
@@ -24,6 +21,16 @@ class LogData{
 
   String getFormattedDateTime(){
     var date = DateTime.fromMillisecondsSinceEpoch(datetime);
-    return DateFormat('yyyy-MM-dd HH:mm:ss').format(date);
+    return formatDateTime(date, 'yyyy-MM-dd HH:mm:ss');
+  }
+
+  String formatDateTime(DateTime dateTime, String format) {
+    return format
+        .replaceAll('yyyy', dateTime.year.toString())
+        .replaceAll('MM', dateTime.month.toString().padLeft(2, '0'))
+        .replaceAll('dd', dateTime.day.toString().padLeft(2, '0'))
+        .replaceAll('HH', dateTime.hour.toString().padLeft(2, '0'))
+        .replaceAll('mm', dateTime.minute.toString().padLeft(2, '0'))
+        .replaceAll('ss', dateTime.second.toString().padLeft(2, '0'));
   }
 }
