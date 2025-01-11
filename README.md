@@ -1,39 +1,39 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package helps you to log app messages.
 
 ## Features
 
-Logg your app.
+Use FionaLogger to log your app messages into different repositories. 
+A repository could be a system console, a file, a table into a database, anything you want to define as a repository.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+This packages implements a simple repository to write the messages into the system console, but then you are able to define your custom repositories.
+
+To know about the idea and the structure you can read this article:
+https://medium.com/@ber.iribarne/forms-in-flutter-how-to-deal-with-forms-in-flutter-2686c03ad9b3
+
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+You can find a complete example the example directory.
 
 ```dart
-const like = 'sample';
+
 ```
+Then you will be able to use it:
+
+
+```dart
+
+
+```
+Draw it:
+
+```dart
+
+```
+
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+* See https://medium.com/@ber.iribarne/forms-in-flutter-how-to-deal-with-forms-in-flutter-2686c03ad9b3
