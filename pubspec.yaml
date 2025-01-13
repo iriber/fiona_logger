@@ -1,7 +1,8 @@
 name: fiona_logger
 description: Fiona logger package project.
 version: 1.0.0
-homepage:
+repository: https://github.com/iriber/fiona_logger
+
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

@@ -13,7 +13,8 @@ class LogInConsole implements LogDataRepository {
   @override
   Future<void> add(LogData logData) async {
     logs.add(logData);
-    debugPrint(logData.message);
+    debugPrint(
+        "${logData.getFormattedLevel()}: ${logData.getFormattedDateTime()} - ${logData.message}");
   }
 
   @override

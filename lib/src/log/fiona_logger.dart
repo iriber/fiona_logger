@@ -34,31 +34,31 @@ class FionaLogger {
   }
 
   void v(String message) {
-    LogData data = LogData(message, level: Level.verbose.toString());
+    LogData data = LogData(message, level: Level.verbose);
     data.datetime = DateTime.now().toUtc().millisecondsSinceEpoch;
     log(data, Level.verbose);
   }
 
   void w(String message) {
-    LogData data = LogData(message, level: Level.warning.toString());
+    LogData data = LogData(message, level: Level.warning);
     data.datetime = DateTime.now().toUtc().millisecondsSinceEpoch;
     log(data, Level.warning);
   }
 
   void i(String message) {
-    LogData data = LogData(message, level: Level.info.toString());
+    LogData data = LogData(message, level: Level.info);
     data.datetime = DateTime.now().toUtc().millisecondsSinceEpoch;
     log(data, Level.info);
   }
 
   void d(String message) {
-    LogData data = LogData(message, level: Level.debug.toString());
+    LogData data = LogData(message, level: Level.debug);
     data.datetime = DateTime.now().toUtc().millisecondsSinceEpoch;
     log(data, Level.debug);
   }
 
   void e(String message) {
-    LogData data = LogData(message, level: Level.error.toString());
+    LogData data = LogData(message, level: Level.error);
     data.datetime = DateTime.now().toUtc().millisecondsSinceEpoch;
     log(data, Level.error);
   }
